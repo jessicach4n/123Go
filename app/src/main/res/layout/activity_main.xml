@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipChildren="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="100dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:padding="50dp"
+            app:srcCompat="@drawable/ic_logo" />
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="268dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:includeFontPadding="false"
+            android:text="Scanner un code QR"
+            android:textColor="@color/red"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_qrcode_solid"
+            app:iconGravity="textEnd"
+            app:iconPadding="20dp"
+            app:iconTint="@color/red"
+            app:strokeColor="@color/red"
+            app:strokeWidth="3dp"
+            tools:layout_editor_absoluteY="368dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:transitionName="menu">
+
+        <Button
+            android:id="@+id/defis"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_main_layout"
+            android:fontFamily="@font/sniglet"
+            android:text="Défis"
+            app:icon="@drawable/ic_trophy_solid"
+            app:iconGravity="textTop"
+            app:iconPadding="10dp" />
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_main_layout"
+            android:fontFamily="@font/sniglet"
+            android:text="À Propos"
+            app:icon="@drawable/ic_readme_brands"
+            app:iconGravity="textTop"
+            app:iconPadding="10dp" />
+
+        <Button
+            android:id="@+id/facebook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_main_layout"
+            android:fontFamily="@font/sniglet"
+            android:text="Facebook"
+            app:icon="@drawable/ic_facebook_square_brands"
+            app:iconGravity="textTop"
+            app:iconPadding="10dp" />
+    </LinearLayout>
+</LinearLayout>

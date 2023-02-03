@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/kavoon"
+            android:gravity="center"
+            android:text="Ta mission"
+            android:textColor="@color/red"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:fontFamily="@font/sniglet"
+            android:lineSpacingExtra="12sp"
+            android:text="Pars à la chasse aux codes QR et dévoile les activités qui s'y cache! Tu as aussi accès directement aux jeux à partir de la page de défis!  \n À toi de jouer!"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:transitionName="menu">
+
+        <Button
+            android:id="@+id/defis"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_main_layout"
+            android:fontFamily="@font/sniglet"
+            android:text="Défis"
+            app:icon="@drawable/ic_trophy_solid"
+            app:iconGravity="textTop"
+            app:iconPadding="10dp" />
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_main_layout"
+            android:fontFamily="@font/sniglet"
+            android:text="À Propos"
+            android:textColor="@color/lightyellow"
+            app:icon="@drawable/ic_readme_brands"
+            app:iconGravity="textTop"
+            app:iconPadding="10dp"
+            app:iconTint="@color/lightyellow" />
+
+        <Button
+            android:id="@+id/facebook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_main_layout"
+            android:fontFamily="@font/sniglet"
+            android:text="Facebook"
+            app:icon="@drawable/ic_facebook_square_brands"
+            app:iconGravity="textTop"
+            app:iconPadding="10dp" />
+    </LinearLayout>
+</LinearLayout>
